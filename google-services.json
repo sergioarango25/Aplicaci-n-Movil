@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1069505478496",
+    "project_id": "esperanza-4fa75",
+    "storage_bucket": "esperanza-4fa75.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069505478496:android:f34ed29c80bc9261926805",
+        "android_client_info": {
+          "package_name": "com.garciasergiosteam.domingo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt3QCbnDa9DjLqEBuduBcBzVRfCGihsXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
