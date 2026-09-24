@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import PerfilUsuario from './screens/perfilesUsuario';
 import {
   StyleSheet,
   View,
@@ -11,6 +12,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import MapView, { Marker } from "react-native-maps";
 import * as Location from "expo-location";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
+
 
 // Coordenadas por defecto (Cali) usadas mientras se obtiene la ubicación real
 const DEFAULT_REGION = {
@@ -68,6 +70,13 @@ export default function App() {
         style={styles.scrollContainer}
         contentContainerStyle={styles.scrollContent}
       >
+        {/* ===== CAMBIO 1: abrimos la condición aquí ===== */}
+        {activeTab === "profile" ? (
+          <PerfilUsuario />
+        ) : (
+          <>
+        {/* ===== fin CAMBIO 1 ===== */}
+
         <View style={styles.titulo}>
           <Text style={styles.information}>LA ESPERANZA</Text>
         </View>
@@ -152,6 +161,11 @@ export default function App() {
         <View style={styles.acceso}>
           <Text style={styles.accesoRapido}>Zonas cercanas</Text>
         </View>
+
+        {/* ===== CAMBIO 2: cerramos la condición aquí ===== */}
+          </>
+        )}
+        {/* ===== fin CAMBIO 2 ===== */}
       </ScrollView>
 
       {/* Barra de navegación inferior fija (ver diseño de Stitch) */}
